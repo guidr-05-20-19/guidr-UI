@@ -42,6 +42,7 @@ header .Nav-Background .nav-btns .Button-BG {
   align-items: center;
   justify-content: center;
   margin-right: 20px;
+  text-decoration: none;
 }
 header .Nav-Background .nav-btns .Button-BG .Button-BG-text {
   font-family: Roboto;
@@ -102,17 +103,16 @@ body {
   align-items: center;
 }
 .content .content-box {
-  border: solid 4px #c9ffbf;
-  background-color: #26621b;
+  border: solid 1px #c9ffbf;
   height: 600px;
   width: 500px;
   margin-left: 125px;
   box-shadow: 0 3.8px 7.7px 0 rgba(38, 98, 27, 0.24);
-  opacity: 0.8;
   color: white;
   display: flex;
   align-items: center;
   flex-flow: column;
+  background-color: rgba(38, 98, 27, 0.5);
 }
 .content h1 {
   height: 162px;
@@ -124,6 +124,7 @@ body {
   line-height: normal;
   letter-spacing: 0.8px;
   margin: 15px;
+  opacity: 1;
 }
 .content .content-text {
   font-family: Roboto;
@@ -135,4 +136,20 @@ body {
   letter-spacing: 0.8px;
   color: #ffffff;
   margin: 15px;
+  opacity: 1;
+}
+.content-features {
+  padding-top: 40px;
+  padding-bottom: 40px;
+  margin-left: auto;
+  margin-right: auto;
+  display: flex;
+  flex-wrap: nowrap;
+}
+.content-features .feature-node {
+  margin: 20px;
+  width: 25%;
+}
+.content-features .feature-node svg {
+  fill: #26621b;
 }
