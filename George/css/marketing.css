@@ -33,36 +33,16 @@ header .Nav-Background .Logo {
 header .Nav-Background .nav-btns {
   display: flex;
 }
-header .Nav-Background .nav-btns .Button-BG {
-  width: 120px;
-  height: 40px;
-  border-radius: 4px;
-  box-shadow: 0 4px 8px 0 rgba(38, 98, 27, 0.24);
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  margin-right: 20px;
-  text-decoration: none;
-}
-header .Nav-Background .nav-btns .Button-BG .Button-BG-text {
-  font-family: Roboto;
-  font-size: 14px;
-  font-weight: bold;
-  font-style: normal;
-  font-stretch: normal;
-  line-height: normal;
-  letter-spacing: 0.8px;
-}
 header .Nav-Background .nav-btns .btn-light {
   background-color: #c9ffbf;
 }
-header .Nav-Background .nav-btns .btn-light .Button-BG-text {
+header .Nav-Background .nav-btns .btn-light .btn-text {
   color: #26621b;
 }
 header .Nav-Background .nav-btns .btn-dark {
   background-color: #26621b;
 }
-header .Nav-Background .nav-btns .btn-dark .Button-BG-text {
+header .Nav-Background .nav-btns .btn-dark .btn-text {
   color: #ffffff;
 }
 .footer .Footer-Background {
@@ -84,18 +64,10 @@ header .Nav-Background .nav-btns .btn-dark .Button-BG-text {
   color: #ffffff;
   margin-left: 1.875rem;
 }
-html,
-body {
-  margin: 0;
-  padding: 0;
-  font-family: 'Roboto';
-  background-color: #fffef7;
-}
 .content {
   background: url('../assets/background-image-mountain-toomas-tartes-1409263-un.png');
-  height: 806.9px;
+  height: 48rem;
   object-fit: contain;
-  background-position-y: bottom;
   background-repeat: no-repeat;
   background-position-x: right;
   background-size: 80rem;
@@ -103,40 +75,58 @@ body {
   align-items: center;
 }
 .content .content-box {
-  border: solid 1px #c9ffbf;
-  height: 600px;
-  width: 500px;
-  margin-left: 125px;
-  box-shadow: 0 3.8px 7.7px 0 rgba(38, 98, 27, 0.24);
+  margin-top: 10rem;
+  margin-left: 40px;
   color: white;
   display: flex;
   align-items: center;
   flex-flow: column;
-  background-color: rgba(38, 98, 27, 0.5);
 }
 .content h1 {
-  height: 162px;
   font-family: Roboto;
-  font-size: 34px;
-  font-weight: bold;
-  font-style: normal;
+  font-size: 46px;
+  font-weight: bolder;
   font-stretch: normal;
   line-height: normal;
   letter-spacing: 0.8px;
   margin: 15px;
   opacity: 1;
+  text-align: center;
+  color: #ffffff;
+}
+.content .UVP {
+  width: 350px;
+  font-family: Roboto;
+  font-size: 36px;
+  font-weight: bold;
+  font-stretch: normal;
+  line-height: normal;
+  letter-spacing: 0.75px;
+  margin: 15px;
+  opacity: 1;
+  text-align: center;
+  color: #ffffff;
+}
+.content .btn {
+  width: 160px;
+  height: 40px;
+  border-radius: 4px;
+  background-color: #0d1eb4;
+}
+.content .btn .btn-text {
+  color: #ffffff;
 }
 .content .content-text {
   font-family: Roboto;
   font-size: 24px;
   font-weight: normal;
-  font-style: normal;
   font-stretch: normal;
   line-height: normal;
   letter-spacing: 0.8px;
   color: #ffffff;
   margin: 15px;
   opacity: 1;
+  text-align: center;
 }
 .content-features {
   padding-top: 40px;
@@ -145,11 +135,55 @@ body {
   margin-right: auto;
   display: flex;
   flex-wrap: nowrap;
+  justify-content: space-evenly;
 }
 .content-features .feature-node {
   margin: 20px;
-  width: 25%;
 }
 .content-features .feature-node svg {
-  fill: #26621b;
+  height: 200px;
+  width: 200px;
+}
+.content-features .feature-node .feature-header {
+  height: 38px;
+  font-family: Roboto;
+  font-size: 32px;
+  font-weight: bold;
+  font-style: normal;
+  font-stretch: normal;
+  line-height: normal;
+  letter-spacing: 0.8px;
+  color: #26621b;
+  text-align: center;
+}
+html,
+body {
+  margin: 0;
+  padding: 0;
+  font-family: 'Roboto';
+  background-color: #fffef7;
+}
+.bg-divider {
+  height: 32px;
+  background-color: rgba(201, 255, 191, 0.5);
+}
+.btn {
+  width: 120px;
+  height: 40px;
+  border-radius: 4px;
+  box-shadow: 0 4px 8px 0 rgba(38, 98, 27, 0.24);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-right: 20px;
+  text-decoration: none;
+}
+.btn .btn-text {
+  font-family: Roboto;
+  font-size: 14px;
+  font-weight: bold;
+  font-style: normal;
+  font-stretch: normal;
+  line-height: normal;
+  letter-spacing: 0.8px;
 }

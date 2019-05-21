@@ -3,6 +3,7 @@
 @import './header.less';
 @import './footer.less';
 @import './variables.less';
+@import './content.less';
 
 html, body {
   margin: 0;
@@ -11,77 +12,30 @@ html, body {
   background-color: #fffef7;
 }
 
-.content {
-  // background: url('../assets/background-image-pine-marie-dumora-1383014-unsplas.png');
-  background: url('../assets/background-image-mountain-toomas-tartes-1409263-un.png');
+.bg-divider {
   // width: 1024px;
-  height: 806.9px;
-  object-fit: contain;
-  background-position-y: bottom;
-  background-repeat: no-repeat;
-  background-position-x: right;
-  background-size: 80rem;
+  height: 32px;
+  background-color: rgba(201, 255, 191, 0.5);
+}
+
+.btn {
+  width: 120px;
+  height: 40px;
+  border-radius: 4px;
+  box-shadow: 0 4px 8px 0 rgba(38, 98, 27, 0.24);
   display: flex;
   align-items: center;
+  justify-content: center;
+  margin-right: 20px;
+  text-decoration: none;
 
-  .content-box {
-    border: solid 1px @very-light-green;
-    // background-color: @tree-green;
-    height: 600px;
-    width: 500px;
-    margin-left: 125px;
-    box-shadow: 0 3.8px 7.7px 0 rgba(38, 98, 27, 0.24);
-    // opacity: .6;
-    color:  white;
-    display: flex;
-    align-items: center;
-    flex-flow: column;
-    background-color: rgba(38, 98, 27, 0.5);
-  }
-
-  h1 {
-    // width: 331px;
-    height: 162px;
+  .btn-text {
     font-family: Roboto;
-    font-size: 34px;
+    font-size: 14px;
     font-weight: bold;
     font-style: normal;
     font-stretch: normal;
     line-height: normal;
     letter-spacing: 0.8px;
-    margin: 15px;
-    opacity: 1;
-    
-  }
-
-  .content-text {
-    font-family: Roboto;
-    font-size: 24px;
-    font-weight: normal;
-    font-style: normal;
-    font-stretch: normal;
-    line-height: normal;
-    letter-spacing: 0.8px;
-    color: #ffffff;
-    margin: 15px;
-    opacity: 1;
-  }
-}
-.content-features {
-  padding-top: 40px;
-  padding-bottom: 40px;
-  // max-width: 1100px;
-  margin-left: auto;
-  margin-right: auto;
-  display: flex;
-  flex-wrap: nowrap;
-
-  .feature-node {
-    margin: 20px;
-    width: 25%;
-    svg{
-
-      fill: @tree-green;
-    }
   }
 }
