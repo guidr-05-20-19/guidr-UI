@@ -3,7 +3,7 @@
     width: 100%;
     margin: 0 auto;
     @media @mobile {
-        max-width: 800px;
+        max-width: 100%;
         
     }
 }
@@ -16,12 +16,12 @@
     background-color: #ffffff;
     margin-bottom: 1rem;
     @media @mobile  {
-        height: 100px;
+        height: 50px;
     }
     .logo {
-        height: 70px;
+        height: 80px;
         @media @mobile {
-            height: 50px;
+            height: 40px;
         }
     }  
     nav {
@@ -137,16 +137,23 @@ header {
     .text-section {
         float: left;
         width: 30%;
+        @media @mobile {
+            float: none;
+            width: auto;
+        }
         h3 {
             padding: 10px;
             @media @mobile{
                 font-size: 1.8rem;
+                padding: 1px;
             }
         }
         .text-divider {
+            width: 200px;
+            align-self: center;
             border-bottom: 1px solid;
             @media @mobile {
-                margin-top: 25rem;
+                
             }
         }
     }
@@ -155,6 +162,15 @@ header {
         width: 70%;
         height: auto;
         background-color: white;
+        @media @mobile {
+            float: none;
+            width: auto;
+        }
+        img {
+            @media @mobile {
+                margin-right: 2px;
+            }
+        }
 
     }
 }
