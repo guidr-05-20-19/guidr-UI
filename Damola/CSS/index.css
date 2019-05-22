@@ -1,0 +1,269 @@
+html {
+  font-size: 62.5%;
+}
+html,
+body {
+  font-family: 'Roboto', sans-serif;
+}
+img {
+  max-width: 100%;
+  height: auto;
+}
+h1 {
+  font-size: 3rem;
+}
+h2 {
+  font-size: 3rem;
+}
+h3 {
+  font-size: 2rem;
+}
+h4 {
+  font-size: 1.5rem;
+}
+.container {
+  max-width: 1000px;
+  width: 100%;
+  margin: 0 auto;
+}
+@media (max-width: 550px) {
+  .container {
+    max-width: 100%;
+  }
+}
+.main-navigation {
+  display: flex;
+  flex-direction: row;
+  align-items: flex-end;
+  justify-content: space-between;
+  width: 100%;
+  height: 87px;
+  background-color: #ffffff;
+  margin-bottom: 1rem;
+}
+@media (max-width: 550px) {
+  .main-navigation {
+    height: 50px;
+  }
+}
+.main-navigation .logo {
+  height: 80px;
+}
+@media (max-width: 550px) {
+  .main-navigation .logo {
+    height: 40px;
+  }
+}
+.main-navigation nav button {
+  background-color: #26631b;
+  width: 97.5px;
+  height: 40px;
+  font-family: Roboto;
+  font-size: 2rem;
+  font-weight: bold;
+  font-style: normal;
+  font-stretch: normal;
+  line-height: normal;
+  letter-spacing: 0.8px;
+  color: #ffffff;
+  margin-left: 20px;
+  padding: 4px 10px 2px 10px;
+}
+@media (max-width: 550px) {
+  .main-navigation nav button {
+    font-size: 12px;
+    width: 70px;
+    height: 30px;
+  }
+}
+.main-navigation nav button:hover {
+  background-color: #0d1eb4;
+}
+.main-navigation nav button:visited {
+  background-color: #99774e;
+}
+header {
+  width: auto;
+  height: 620px;
+  position: relative;
+  text-align: center;
+  color: white;
+}
+@media (max-width: 550px) {
+  header {
+    position: relative;
+    height: 280px;
+  }
+}
+header h1 {
+  position: absolute;
+  top: 30%;
+  left: 10%;
+  font-size: 5rem;
+  color: #ffffff;
+  width: 331px;
+  height: 100px;
+}
+@media (max-width: 550px) {
+  header h1 {
+    font-size: 2rem;
+    color: #ffffff;
+    position: absolute;
+    width: 200px;
+    height: 70px;
+    top: 35%;
+    left: 5%;
+  }
+}
+header button {
+  position: absolute;
+  top: 70%;
+  left: 18%;
+  width: 160px;
+  height: 40px;
+  background-color: #0d1eb4;
+  color: #ffffff;
+}
+@media (max-width: 550px) {
+  header button {
+    position: absolute;
+    top: 60%;
+    left: 16%;
+    font-size: 1rem;
+    width: 80px;
+    height: 25px;
+  }
+}
+header button:hover {
+  cursor: pointer;
+  background-color: #26631b;
+}
+.background-divider {
+  width: auto;
+  height: 32px;
+  background-color: rgba(201, 255, 191, 0.5);
+}
+@media (max-width: 550px) {
+  .background-divider {
+    height: 20px;
+  }
+}
+.middle-section {
+  width: auto;
+  height: 400px;
+  padding-bottom: 10px;
+}
+@media (max-width: 550px) {
+  .middle-section {
+    height: 1000px;
+  }
+}
+@media (max-width: 550px) {
+  .middle-section h2 {
+    font-size: 23px;
+  }
+}
+.middle-section .text-section {
+  float: left;
+  width: 30%;
+}
+@media (max-width: 550px) {
+  .middle-section .text-section {
+    float: none;
+    width: auto;
+  }
+}
+.middle-section .text-section h3 {
+  padding: 10px;
+}
+@media (max-width: 550px) {
+  .middle-section .text-section h3 {
+    font-size: 1.8rem;
+    padding: 1px;
+  }
+}
+.middle-section .text-section .text-divider {
+  width: 200px;
+  align-self: center;
+  border-bottom: 1px solid;
+}
+.middle-section .image-section {
+  float: right;
+  width: 70%;
+  height: auto;
+  background-color: white;
+}
+@media (max-width: 550px) {
+  .middle-section .image-section {
+    float: none;
+    width: auto;
+  }
+}
+@media (max-width: 550px) {
+  .middle-section .image-section img {
+    margin-right: 2px;
+  }
+}
+.middle-section-divider {
+  width: 904px;
+  height: 1px;
+  background-color: #26631b;
+}
+.bottom-section {
+  position: relative;
+  height: 200px;
+  width: auto;
+  align-items: center;
+  padding-bottom: 20px;
+  margin-bottom: 200px;
+}
+.bottom-section h2 {
+  text-align: center;
+}
+.bottom-section p {
+  text-align: center;
+  font-size: 2.3rem;
+  font-weight: bold;
+}
+.bottom-section img {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 50%;
+  padding-bottom: 10px;
+}
+.bottom-section button {
+  background-color: #0d1eb4;
+  color: #ffffff;
+  font-size: 15px;
+  width: 160px;
+  height: 40px;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
+footer {
+  height: 7rem;
+  width: auto;
+  background-color: #26631b;
+}
+@media (max-width: 550px) {
+  footer {
+    height: 3rem;
+  }
+}
+footer p {
+  width: 100px;
+  height: 20px;
+  font-family: Roboto;
+  font-size: 0.1rem;
+  font-style: normal;
+  font-stretch: normal;
+  line-height: normal;
+  letter-spacing: 0.1px;
+  color: #ffffff;
+}
+.flexbox-row {
+  display: flex;
+  flex-direction: row;
+}

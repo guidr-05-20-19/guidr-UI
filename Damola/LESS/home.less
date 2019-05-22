@@ -1,0 +1,218 @@
+.container {
+    max-width: 1000px;
+    width: 100%;
+    margin: 0 auto;
+    @media @mobile {
+        max-width: 100%;
+        
+    }
+}
+.main-navigation { 
+    .flexbox-row;
+    align-items: flex-end;
+    justify-content: space-between;
+    width: 100%;
+    height: 87px;
+    background-color: #ffffff;
+    margin-bottom: 1rem;
+    @media @mobile  {
+        height: 50px;
+    }
+    .logo {
+        height: 80px;
+        @media @mobile {
+            height: 40px;
+        }
+    }  
+    nav {
+        
+        button {
+            background-color: @tree-green;
+            width: 97.5px;
+            height: 40px;
+            font-family: Roboto;
+            font-size: @medium;
+            font-weight: bold;
+            font-style: normal;
+            font-stretch: normal;
+            line-height: normal;
+            letter-spacing: 0.8px;
+            color: @white;
+            margin-left: 20px;
+            padding: 4px 10px 2px 10px;
+            @media @mobile {
+                font-size: 12px;
+                width: 70px;
+                height: 30px;
+            }            
+            &:hover {
+                background-color: @royal;
+            }
+            &:visited {
+                background-color: @mocha;
+            }
+        }
+    }  
+    
+    
+}
+
+header {
+    width: auto;
+    height: 620px;
+    position: relative;
+    text-align: center;
+    color: white;
+    @media @mobile {
+        position: relative;
+        height: 280px;
+    }
+    
+    h1 {
+        position: absolute;
+        top: 30%;
+        left: 10%;
+        font-size: 5rem;
+        color:@white;
+        width: 331px;
+        height: 100px;
+        @media @mobile {
+            font-size: 2rem;
+            color: @white;
+            position: absolute;
+            width: 200px;
+            height: 70px;
+            top: 35%;
+            left: 5%;
+        }
+    }
+    button {
+       position: absolute;
+       top: 70%;
+       left: 18%;
+       width: 160px;
+       height: 40px;
+       background-color: @royal;
+       color: @white;
+       @media @mobile {
+            position: absolute;
+            top: 60%;
+            left: 16%;
+            font-size: 1rem;
+            width: 80px;
+            height: 25px;
+       }
+       
+
+       &:hover {
+           cursor: pointer;
+           background-color: @tree-green;
+       }
+    }
+    
+}
+
+.background-divider {
+    width: auto;
+    height: 32px;
+    background-color: rgba(201, 255, 191, 0.5);
+    @media @mobile {
+        height: 20px;
+    } 
+}
+
+.middle-section {
+    width: auto;
+    height: 400px;
+    padding-bottom: 10px;
+    @media @mobile {
+        height: 1000px;
+    }
+
+    h2 {
+        @media @mobile {
+            font-size: 23px;
+        }
+    }
+    .text-section {
+        float: left;
+        width: 30%;
+        @media @mobile {
+            float: none;
+            width: auto;
+        }
+        h3 {
+            padding: 10px;
+            @media @mobile{
+                font-size: 1.8rem;
+                padding: 1px;
+            }
+        }
+        .text-divider {
+            width: 200px;
+            align-self: center;
+            border-bottom: 1px solid;
+            @media @mobile {
+                
+            }
+        }
+    }
+    .image-section {
+        float: right;
+        width: 70%;
+        height: auto;
+        background-color: white;
+        @media @mobile {
+            float: none;
+            width: auto;
+        }
+        img {
+            @media @mobile {
+                margin-right: 2px;
+            }
+        }
+
+    }
+}
+
+.middle-section-divider {
+    width: 904px;
+    height: 1px;
+    background-color: @tree-green; 
+}
+
+.bottom-section {
+    position: relative;
+    height: 200px;
+    width: auto;
+    align-items: center;
+    padding-bottom: 20px;
+    margin-bottom: 200px;
+    h2 {
+        text-align: center;
+    }
+    p {
+        text-align: center;
+        font-size: 2.3rem;
+        font-weight: bold;
+    } 
+    img {
+        display: block;
+        margin-left: auto;
+        margin-right: auto;
+        width: 50%;
+        padding-bottom: 10px;
+    }
+    button {
+        background-color: @royal;
+        color: @white;
+        font-size: 15px;
+        width: 160px;
+        height: 40px;
+        display: block;
+        margin-left: auto;
+        margin-right: auto;
+        
+        
+    }
+}
