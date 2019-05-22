@@ -2,4 +2,4 @@
 //     location.href='about-us.html';
 // };
 const aboutButton = document.querySelector('.about-page');
-aboutButton.style.color = "red";
+aboutButton.onclick = "window.location.href = 'about.html';";
