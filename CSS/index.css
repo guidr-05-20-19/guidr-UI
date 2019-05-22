@@ -1,0 +1,80 @@
+html {
+  font-size: 62.5%;
+}
+html,
+body {
+  font-family: 'Roboto', sans-serif;
+}
+img {
+  max-width: 100%;
+  height: auto;
+}
+h1 {
+  font-size: 3rem;
+}
+h2 {
+  font-size: 3rem;
+}
+h3 {
+  font-size: 2rem;
+}
+h4 {
+  font-size: 1.5rem;
+}
+.container {
+  max-width: 1000px;
+  width: 100%;
+  margin: 0 auto;
+}
+.main-navigation {
+  display: flex;
+  flex-direction: row;
+  justify-items: flex-start;
+  align-content: space-around;
+  width: 100%;
+  height: 87px;
+  background-color: #ffffff;
+}
+.main-navigation .logo {
+  height: 80px;
+}
+.main-navigation nav {
+  align-items: flex-end;
+  justify-content: right;
+}
+.main-navigation nav a {
+  font-size: 1.5rem;
+  padding: 20px;
+  margin-left: 1.5rem;
+  border: 0.1px solid;
+  width: 120px;
+  height: 40px;
+}
+header {
+  width: auto;
+  height: 620px;
+  background-image: url('../img/guidr-header.png');
+  box-shadow: 0 4px 8px 0 #26631b;
+}
+header h1 {
+  font-size: 4rem;
+  color: #ffffff;
+  width: 331px;
+  height: 100px;
+}
+footer {
+  height: 10rem;
+  width: auto;
+}
+@media (max-width: 500px) {
+  footer {
+    height: 8rem;
+  }
+}
+footer p {
+  font-size: 1rem;
+}
+.flexbox-row {
+  display: flex;
+  flex-direction: row;
+}
