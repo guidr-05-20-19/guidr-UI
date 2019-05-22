@@ -1,7 +1,15 @@
+#overlay-box {
+  background: @very-light-green;
+  height: 48.8rem;
+  width: 100%;
+  position: absolute;
+  top: 5.4rem;
+  padding: 0;
+  opacity: 0.6;
+  z-index: 1;
+}
 .content {
-    // background: url('../assets/background-image-pine-marie-dumora-1383014-unsplas.png');
     background: url('../assets/background-image-mountain-toomas-tartes-1409263-un.png');
-    // width: 1024px;
     height: 48rem;
     object-fit: contain;
     background-repeat: no-repeat;
@@ -9,19 +17,111 @@
     background-size: 80rem;
     display: flex;
     align-items: center;
-  
+
+  .content-container{
+    z-index: 4;
+    width: 100%;
+    height: 100%;
+  }
+
+  .content-container.landing {
+      width:  auto;
+      height: auto;
+    }
+
+    .content-box.about {
+      margin-left: 0px;
+      margin-top: 0px;
+    }
+
     .content-box {
-      // border: solid .5px @very-light-green;
-      // background-color: rgba(38, 98, 27, 0.7);
-      // height: 600px;
       margin-top: 10rem;
       margin-left: 40px;
-      // box-shadow: 0 3.8px 7.7px 0 rgba(38, 98, 27, 0.24);
-      // opacity: .6;
       color:  white;
       display: flex;
       align-items: center;
       flex-flow: column;
+    }
+    .content-box-2 {
+      top:15rem;
+      left: 10rem;
+      position: absolute;
+    }
+    #tst{
+      visibility:hidden;
+      color:  white;
+      font-size: 26px;
+      position: absolute;
+      top: 300px;
+      right: 125px;
+      font-size: 46px;
+      width: 350px;
+      height: 500px;
+      border: solid 18px;
+      display: flex;
+      flex-direction: column;
+      background: linear-gradient(transparent 58%, #c9ffbf 52%, #c9ffbf 73%, white 70%) no-repeat
+    } 
+
+    #inner-tst{
+      // width: 325px;
+      height: 2rem;
+      box-shadow: 0 4px 8px 0 rgba(38, 98, 27, 0.24);
+      background-color: #f8fdf7;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+
+      .Logo {
+        height: 85%;
+        margin-left: 5px;
+        object-fit: contain;
+      }
+
+      .nav-btns{
+        display: flex;
+  
+        .btn-light{
+          .custom-btn(@very-light-green, @tree-green, 30px, 10px);
+          .btn-text {
+            color:  @tree-green;
+            font-size: 5px;
+            }
+          }
+  
+          .btn-dark{
+            .custom-btn(@tree-green, #ffffff, 30px, 10px);
+            .btn-text {
+              color:  #ffffff;
+              font-size: 5px;
+              }
+          }
+        }
+    }
+
+    #tst-h1 {
+      font-size: 15px;
+      color: black;
+      top: 18rem;
+      left: 7rem;
+      position: absolute;
+      font-weight: bold;
+    }
+    #tst-h2 {
+      font-size: 13px;
+      color: black;
+      width: 22.5rem;
+      top: 20rem;
+      position: absolute;
+      text-align: center;
+    }
+    #tst-text{
+      color: black;
+      font-size: 10px;
+      position: absolute;
+      top: 23rem;
+      text-align: justify;
+      width: 21.5rem;
     }
   
     h1 {
@@ -35,8 +135,15 @@
       opacity: 1;
       text-align: center;
       color: #ffffff;
-      
     }
+
+    .about-header{
+      color: white;
+      background-color: @tree-green;
+      width: 100%;
+    }
+
+
 
     .UVP{
       width: 350px;
@@ -51,15 +158,22 @@
       text-align: center;
       color: #ffffff;
     }
+
     .btn {
-      width: 160px;
-      height: 40px;
-      border-radius: 4px;
-      background-color: @royal;
+      .custom-btn(@royal, #ffffff, 160px, 40px);
       .btn-text {
         color:  #ffffff;
       }
     }
+    // .btn {
+    //   width: 160px;
+    //   height: 40px;
+    //   border-radius: 4px;
+    //   background-color: 
+    //   .btn-text {
+    //     color:  #ffffff;
+    //   }
+    // }
   
     .content-text {
       font-family: Roboto;
@@ -74,6 +188,37 @@
       text-align: center;
     }
   }
+
+  .content-features.about {
+    flex-wrap: wrap;
+    padding-top: 0px;
+    max-width: 70rem;
+
+    .feature-node.about {
+      width: 175px;
+      background-color: white;
+      box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+      margin-bottom: 25px;
+      flex: 0 1 18%;
+      
+
+      img {
+        width: 100%;
+        height: auto;
+      }
+    }
+    
+    .feature-header.img-container {
+      text-align: center;
+      padding: 10px 20px;
+      background-color: @tree-green;
+      color:  white;
+      height: '';
+      font-size: '';
+      padding: 0px 0px;
+    }
+  }
+
   .content-features {
     padding-top: 40px;
     padding-bottom: 40px;
@@ -83,6 +228,16 @@
     display: flex;
     flex-wrap: nowrap;
     justify-content: space-evenly;
+
+    @media @phone {
+      flex-flow: column;
+      align-items: center;
+      width: 97%;
+      padding: 0px 0px;
+      // margin: 20px 2.5%;
+      height: 100%;
+      margin-bottom: 10px;
+    }
   
     .feature-node {
       margin: 20px;
@@ -102,6 +257,8 @@
         letter-spacing: 0.8px;
         color: @tree-green;
         text-align: center;
+        }
       }
-    }
-  }
+
+
+}

@@ -3,7 +3,12 @@
 
 <head>
   <title>Guidr</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
   <link href="css/marketing.css" rel="stylesheet">
+  <script src='https://cdnjs.cloudflare.com/ajax/libs/gsap/2.0.2/TweenMax.min.js'></script>
+  <script src="js/content.js"></script>
+  
+  
 </head>
 
 <body>
@@ -15,15 +20,39 @@
         <div class='nav-btns'>
             <a class='btn btn-light' href='#'><span class='btn-text'>REGISTER</span></a>
             <a class='btn btn-dark' href='#'><span class='btn-text'>SIGN IN</span></a>
+            <a class='btn btn-light' href='about.html'><span class='btn-text'>ABOUT</span></a>
         </div>
         </nav>       
     </header>
     <div class='content'>
-        <div class='content-box'>
-            <h1>Track the Places You Love to Hike</h1>
-            <div class='UVP'>Create Your Guide Portfolio With Guidr</div>
+        <div class='content-container landing'>
+        <div class='content-box landing'>
+            <h1 id='content-box-header'>Track the Places You Love to Hike</h1>
+            <div class='UVP' id='UVP'>Create Your Guide Portfolio With Guidr</div>
             <a class='btn' href='#'><span class='btn-text'>TRY NOW</span></a>
         </div>
+
+        <div id='tst'>
+            <div id='inner-tst'>
+                <img src="assets/Logo.svg" class="Logo">
+        
+                <div class='nav-btns'>
+                    <a class='btn btn-light' href='#'><span class='btn-text'>REGISTER</span></a>
+                    <a class='btn btn-dark' href='#'><span class='btn-text'>SIGN IN</span></a>
+                    
+                </div>
+            </div>
+            <div>
+                <p id='tst-h1'>Big Rocky Mountain</p>
+                <p id='tst-h2'>A 3 Day Trek Through The Rockies</p>
+                <p id='tst-text'>Departed from Deer Lodge Park. The trip was through Dinosaur National Monument. We spent two nights camping on the river. It was a guided tour for one family of four. We provided all the cooking supplies. 
+
+                        Beautiful scenery along the river. You float through a desert canyon with sheer rock cliffs towering above you. Awesome hiking all along the river.
+                        
+                        We went through many rapids, the biggest being Warm Springs(a class IV rapid). We left no trace at our campsites and ensured safety through the rapids.</p>
+            </div>
+        </div>
+    </div>  
     </div>
     <div class='bg-divider'></div>
     <div class='content-features'>
@@ -42,12 +71,13 @@
         </div>
         <div class='feature-node'>
                 <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">       
-                    <image xlink:href="assets/pencil.svg" width="500" height="300"/>
+                    <image xlink:href="assets/book.svg" width="200" height="200"/>
                 </svg>
                 <h2 class='feature-header'>Log</h2>
         </div>
 
     </div>
+    
     <footer class="footer">
         <div class='Footer-Background'>
             <div class='Footer-Content'>© 2019 Guidr</div>

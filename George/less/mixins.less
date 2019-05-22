@@ -1,0 +1,45 @@
+//Parametric Mixin
+.custom-btn(@bgcolor, @font-color, @w, @h){
+    width: @w;
+    height: @h;
+    background-color: @bgcolor;
+    color: @font-color;
+    border-radius: 4px;
+    box-shadow: 0 4px 8px 0 rgba(38, 98, 27, 0.24);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-right: 20px;
+    font-family: Roboto;
+    text-decoration: none;
+    // font-size: 16px;
+    // text-align: center;
+    // padding: 1rem 2rem;
+    // display: inline-block;
+    @media @phone {
+        // width: 80%;
+    }
+}
+
+
+// .btn {
+//     width: 120px;
+//     height: 40px;
+//     border-radius: 4px;
+//     box-shadow: 0 4px 8px 0 rgba(38, 98, 27, 0.24);
+//     display: flex;
+//     align-items: center;
+//     justify-content: center;
+//     margin-right: 20px;
+//     text-decoration: none;
+  
+//     .btn-text {
+//       font-family: Roboto;
+//       font-size: 14px;
+//       font-weight: bold;
+//       font-style: normal;
+//       font-stretch: normal;
+//       line-height: normal;
+//       letter-spacing: 0.8px;
+//     }
+//   }

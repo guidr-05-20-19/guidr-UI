@@ -34,13 +34,39 @@ header .Nav-Background .nav-btns {
   display: flex;
 }
 header .Nav-Background .nav-btns .btn-light {
+  width: 120px;
+  height: 40px;
   background-color: #c9ffbf;
+  color: #26621b;
+  border-radius: 4px;
+  box-shadow: 0 4px 8px 0 rgba(38, 98, 27, 0.24);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-right: 20px;
+  font-family: Roboto;
+  text-decoration: none;
+}
+@media (max-width: 500px) {
 }
 header .Nav-Background .nav-btns .btn-light .btn-text {
   color: #26621b;
 }
 header .Nav-Background .nav-btns .btn-dark {
+  width: 120px;
+  height: 40px;
   background-color: #26621b;
+  color: #ffffff;
+  border-radius: 4px;
+  box-shadow: 0 4px 8px 0 rgba(38, 98, 27, 0.24);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-right: 20px;
+  font-family: Roboto;
+  text-decoration: none;
+}
+@media (max-width: 500px) {
 }
 header .Nav-Background .nav-btns .btn-dark .btn-text {
   color: #ffffff;
@@ -64,6 +90,16 @@ header .Nav-Background .nav-btns .btn-dark .btn-text {
   color: #ffffff;
   margin-left: 1.875rem;
 }
+#overlay-box {
+  background: #c9ffbf;
+  height: 48.8rem;
+  width: 100%;
+  position: absolute;
+  top: 5.4rem;
+  padding: 0;
+  opacity: 0.6;
+  z-index: 1;
+}
 .content {
   background: url('../assets/background-image-mountain-toomas-tartes-1409263-un.png');
   height: 48rem;
@@ -74,6 +110,19 @@ header .Nav-Background .nav-btns .btn-dark .btn-text {
   display: flex;
   align-items: center;
 }
+.content .content-container {
+  z-index: 4;
+  width: 100%;
+  height: 100%;
+}
+.content .content-container.landing {
+  width: auto;
+  height: auto;
+}
+.content .content-box.about {
+  margin-left: 0px;
+  margin-top: 0px;
+}
 .content .content-box {
   margin-top: 10rem;
   margin-left: 40px;
@@ -81,6 +130,106 @@ header .Nav-Background .nav-btns .btn-dark .btn-text {
   display: flex;
   align-items: center;
   flex-flow: column;
+}
+.content .content-box-2 {
+  top: 15rem;
+  left: 10rem;
+  position: absolute;
+}
+.content #tst {
+  visibility: hidden;
+  color: white;
+  font-size: 26px;
+  position: absolute;
+  top: 300px;
+  right: 125px;
+  font-size: 46px;
+  width: 350px;
+  height: 500px;
+  border: solid 18px;
+  display: flex;
+  flex-direction: column;
+  background: linear-gradient(transparent 58%, #c9ffbf 52%, #c9ffbf 73%, white 70%) no-repeat;
+}
+.content #inner-tst {
+  height: 2rem;
+  box-shadow: 0 4px 8px 0 rgba(38, 98, 27, 0.24);
+  background-color: #f8fdf7;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.content #inner-tst .Logo {
+  height: 85%;
+  margin-left: 5px;
+  object-fit: contain;
+}
+.content #inner-tst .nav-btns {
+  display: flex;
+}
+.content #inner-tst .nav-btns .btn-light {
+  width: 30px;
+  height: 10px;
+  background-color: #c9ffbf;
+  color: #26621b;
+  border-radius: 4px;
+  box-shadow: 0 4px 8px 0 rgba(38, 98, 27, 0.24);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-right: 20px;
+  font-family: Roboto;
+  text-decoration: none;
+}
+@media (max-width: 500px) {
+}
+.content #inner-tst .nav-btns .btn-light .btn-text {
+  color: #26621b;
+  font-size: 5px;
+}
+.content #inner-tst .nav-btns .btn-dark {
+  width: 30px;
+  height: 10px;
+  background-color: #26621b;
+  color: #ffffff;
+  border-radius: 4px;
+  box-shadow: 0 4px 8px 0 rgba(38, 98, 27, 0.24);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-right: 20px;
+  font-family: Roboto;
+  text-decoration: none;
+}
+@media (max-width: 500px) {
+}
+.content #inner-tst .nav-btns .btn-dark .btn-text {
+  color: #ffffff;
+  font-size: 5px;
+}
+.content #tst-h1 {
+  font-size: 15px;
+  color: black;
+  top: 18rem;
+  left: 7rem;
+  position: absolute;
+  font-weight: bold;
+}
+.content #tst-h2 {
+  font-size: 13px;
+  color: black;
+  width: 22.5rem;
+  top: 20rem;
+  position: absolute;
+  text-align: center;
+}
+.content #tst-text {
+  color: black;
+  font-size: 10px;
+  position: absolute;
+  top: 23rem;
+  text-align: justify;
+  width: 21.5rem;
 }
 .content h1 {
   font-family: Roboto;
@@ -93,6 +242,11 @@ header .Nav-Background .nav-btns .btn-dark .btn-text {
   opacity: 1;
   text-align: center;
   color: #ffffff;
+}
+.content .about-header {
+  color: white;
+  background-color: #26621b;
+  width: 100%;
 }
 .content .UVP {
   width: 350px;
@@ -110,8 +264,18 @@ header .Nav-Background .nav-btns .btn-dark .btn-text {
 .content .btn {
   width: 160px;
   height: 40px;
-  border-radius: 4px;
   background-color: #0d1eb4;
+  color: #ffffff;
+  border-radius: 4px;
+  box-shadow: 0 4px 8px 0 rgba(38, 98, 27, 0.24);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-right: 20px;
+  font-family: Roboto;
+  text-decoration: none;
+}
+@media (max-width: 500px) {
 }
 .content .btn .btn-text {
   color: #ffffff;
@@ -128,6 +292,31 @@ header .Nav-Background .nav-btns .btn-dark .btn-text {
   opacity: 1;
   text-align: center;
 }
+.content-features.about {
+  flex-wrap: wrap;
+  padding-top: 0px;
+  max-width: 70rem;
+}
+.content-features.about .feature-node.about {
+  width: 175px;
+  background-color: white;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+  margin-bottom: 25px;
+  flex: 0 1 18%;
+}
+.content-features.about .feature-node.about img {
+  width: 100%;
+  height: auto;
+}
+.content-features.about .feature-header.img-container {
+  text-align: center;
+  padding: 10px 20px;
+  background-color: #26621b;
+  color: white;
+  height: '';
+  font-size: '';
+  padding: 0px 0px;
+}
 .content-features {
   padding-top: 40px;
   padding-bottom: 40px;
@@ -136,6 +325,16 @@ header .Nav-Background .nav-btns .btn-dark .btn-text {
   display: flex;
   flex-wrap: nowrap;
   justify-content: space-evenly;
+}
+@media (max-width: 500px) {
+  .content-features {
+    flex-flow: column;
+    align-items: center;
+    width: 97%;
+    padding: 0px 0px;
+    height: 100%;
+    margin-bottom: 10px;
+  }
 }
 .content-features .feature-node {
   margin: 20px;
@@ -167,23 +366,16 @@ body {
   height: 32px;
   background-color: rgba(201, 255, 191, 0.5);
 }
-.btn {
-  width: 120px;
-  height: 40px;
-  border-radius: 4px;
-  box-shadow: 0 4px 8px 0 rgba(38, 98, 27, 0.24);
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  margin-right: 20px;
-  text-decoration: none;
-}
-.btn .btn-text {
-  font-family: Roboto;
-  font-size: 14px;
-  font-weight: bold;
-  font-style: normal;
-  font-stretch: normal;
-  line-height: normal;
-  letter-spacing: 0.8px;
+#overlay {
+  position: fixed;
+  display: none;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: rgba(0, 0, 0, 0.5);
+  z-index: 2;
+  cursor: pointer;
 }
