@@ -18,19 +18,18 @@ header {
     .nav-btns{
       display: flex;
 
-
-
       .btn-light{
-        background-color: @very-light-green;
-          .btn-text {
-            color: @tree-green;
+        .custom-btn(@very-light-green, @tree-green, 120px, 40px);
+        .btn-text {
+          color:  @tree-green;
           }
         }
+
         .btn-dark{
-          background-color: @tree-green;
+          .custom-btn(@tree-green, #ffffff, 120px, 40px);
           .btn-text {
-            color: #ffffff;
-          }
+            color:  #ffffff;
+            }
         }
       }
     }
