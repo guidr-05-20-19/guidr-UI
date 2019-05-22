@@ -1,13 +1,3 @@
-#overlay-box {
-  background: @very-light-green;
-  height: 48.8rem;
-  width: 100%;
-  position: absolute;
-  top: 5.4rem;
-  padding: 0;
-  opacity: 0.6;
-  z-index: 1;
-}
 .content {
     background: url('../assets/background-image-mountain-toomas-tartes-1409263-un.png');
     height: 48rem;
@@ -17,6 +7,7 @@
     background-size: 80rem;
     display: flex;
     align-items: center;
+    
 
   .content-container{
     z-index: 4;
@@ -47,7 +38,10 @@
       left: 10rem;
       position: absolute;
     }
-    #tst{
+
+  // Animation Styling
+
+    .landing-animation-1 {
       visibility:hidden;
       color:  white;
       font-size: 26px;
@@ -63,7 +57,7 @@
       background: linear-gradient(transparent 58%, #c9ffbf 52%, #c9ffbf 73%, white 70%) no-repeat
     } 
 
-    #inner-tst{
+    .landing-animation-1-inner{
       // width: 325px;
       height: 2rem;
       box-shadow: 0 4px 8px 0 rgba(38, 98, 27, 0.24);
@@ -72,7 +66,7 @@
       align-items: center;
       justify-content: space-between;
 
-      .Logo {
+      .logo {
         height: 85%;
         margin-left: 5px;
         object-fit: contain;
@@ -123,6 +117,7 @@
       text-align: justify;
       width: 21.5rem;
     }
+  // End Animation Styling
   
     h1 {
       font-family: Roboto;
@@ -142,8 +137,6 @@
       background-color: @tree-green;
       width: 100%;
     }
-
-
 
     .UVP{
       width: 350px;
@@ -165,16 +158,7 @@
         color:  #ffffff;
       }
     }
-    // .btn {
-    //   width: 160px;
-    //   height: 40px;
-    //   border-radius: 4px;
-    //   background-color: 
-    //   .btn-text {
-    //     color:  #ffffff;
-    //   }
-    // }
-  
+ 
     .content-text {
       font-family: Roboto;
       font-size: 24px;
@@ -189,6 +173,8 @@
     }
   }
 
+  // About Page Styling
+
   .content-features.about {
     flex-wrap: wrap;
     padding-top: 0px;
@@ -200,7 +186,6 @@
       box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
       margin-bottom: 25px;
       flex: 0 1 18%;
-      
 
       img {
         width: 100%;
@@ -218,6 +203,7 @@
       padding: 0px 0px;
     }
   }
+  // End About Page Styling
 
   .content-features {
     padding-top: 40px;
@@ -259,6 +245,15 @@
         text-align: center;
         }
       }
+}
 
-
+#overlay-box {
+  background: @very-light-green;
+  height: 48.8rem;
+  width: 100%;
+  position: absolute;
+  top: 5.4rem;
+  padding: 0;
+  opacity: 0.6;
+  z-index: 1;
 }
