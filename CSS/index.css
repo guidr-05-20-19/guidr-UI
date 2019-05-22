@@ -26,6 +26,11 @@ h4 {
   width: 100%;
   margin: 0 auto;
 }
+@media (max-width: 500px) {
+  .container {
+    max-width: 800px;
+  }
+}
 .main-navigation {
   display: flex;
   flex-direction: row;
@@ -36,8 +41,18 @@ h4 {
   background-color: #ffffff;
   margin-bottom: 1rem;
 }
+@media (max-width: 500px) {
+  .main-navigation {
+    height: 100px;
+  }
+}
 .main-navigation .logo {
   height: 70px;
+}
+@media (max-width: 500px) {
+  .main-navigation .logo {
+    height: 50px;
+  }
 }
 .main-navigation nav button {
   background-color: #26631b;
@@ -54,6 +69,13 @@ h4 {
   margin-left: 20px;
   padding: 4px 10px 2px 10px;
 }
+@media (max-width: 500px) {
+  .main-navigation nav button {
+    font-size: 12px;
+    width: 70px;
+    height: 30px;
+  }
+}
 .main-navigation nav button:hover {
   background-color: #0d1eb4;
 }
@@ -67,6 +89,12 @@ header {
   text-align: center;
   color: white;
 }
+@media (max-width: 500px) {
+  header {
+    position: relative;
+    height: 280px;
+  }
+}
 header h1 {
   position: absolute;
   top: 30%;
@@ -75,6 +103,17 @@ header h1 {
   color: #ffffff;
   width: 331px;
   height: 100px;
+}
+@media (max-width: 500px) {
+  header h1 {
+    font-size: 2rem;
+    color: #ffffff;
+    position: absolute;
+    width: 200px;
+    height: 70px;
+    top: 35%;
+    left: 5%;
+  }
 }
 header button {
   position: absolute;
@@ -85,6 +124,16 @@ header button {
   background-color: #0d1eb4;
   color: #ffffff;
 }
+@media (max-width: 500px) {
+  header button {
+    position: absolute;
+    top: 60%;
+    left: 16%;
+    font-size: 1rem;
+    width: 80px;
+    height: 25px;
+  }
+}
 header button:hover {
   cursor: pointer;
   background-color: #26631b;
@@ -94,10 +143,25 @@ header button:hover {
   height: 32px;
   background-color: rgba(201, 255, 191, 0.5);
 }
+@media (max-width: 500px) {
+  .background-divider {
+    height: 20px;
+  }
+}
 .middle-section {
   width: auto;
   height: 400px;
   padding-bottom: 10px;
+}
+@media (max-width: 500px) {
+  .middle-section {
+    height: 1000px;
+  }
+}
+@media (max-width: 500px) {
+  .middle-section h2 {
+    font-size: 23px;
+  }
 }
 .middle-section .text-section {
   float: left;
@@ -105,8 +169,10 @@ header button:hover {
 }
 .middle-section .text-section h3 {
   padding: 10px;
+  font-size: 1.8rem;
 }
 .middle-section .text-section .text-divider {
+  margin-top: 25rem;
   border-bottom: 1px solid;
 }
 .middle-section .image-section {
