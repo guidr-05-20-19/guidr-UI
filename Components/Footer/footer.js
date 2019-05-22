@@ -1,17 +1,18 @@
-const body = document.querySelector('.container');
+const bottom = document.querySelector('.bottom-section');
 class Footer {
-    constructor(element){
+    constructor(){
         this.footer = document.createElement('footer');
         this.paragragh = document.createElement('p');
-
-    
+        this.buildFooter();
     }
 
     buildFooter() {
-        this.paragragh.textContent = 'Copyright Guidr 2018';
+        this.paragragh.textContent = '© 2019 Guidr';
         this.footer.appendChild(this.paragragh);
-        body.appendChild(this.footer);
+        bottom.append(this.footer);
 
     }
 
 }
+
+const footer = new Footer();

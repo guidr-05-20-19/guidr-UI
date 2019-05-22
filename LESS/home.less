@@ -3,26 +3,40 @@
     width: 100%;
     margin: 0 auto;
 }
-.main-navigation {
+.main-navigation { 
     .flexbox-row;
-    justify-items: flex-start;
-    align-content: space-around;
+    align-items: flex-end;
+    justify-content: space-between;
     width: 100%;
     height: 87px;
     background-color: #ffffff;
+    margin-bottom: 1rem;
     .logo {
-        height: 80px;
+        height: 70px;
     }  
     nav {
-        align-items: flex-end;
-        justify-content: right;
-        a {
-            font-size: @small;
-            padding: 20px; 
-            margin-left: @small;
-            border: 0.1px solid;
-            width: 120px;
+        
+        button {
+            background-color: @tree-green;
+            width: 97.5px;
             height: 40px;
+            font-family: Roboto;
+            font-size: @medium;
+            font-weight: bold;
+            font-style: normal;
+            font-stretch: normal;
+            line-height: normal;
+            letter-spacing: 0.8px;
+            color: @white;
+            margin-left: 20px;
+            padding: 4px 10px 2px 10px;
+            
+            &:hover {
+                background-color: @royal;
+            }
+            &:visited {
+                background-color: @mocha;
+            }
         }
     }  
     
@@ -32,18 +46,104 @@
 header {
     width: auto;
     height: 620px;
-    background-image: url('../img/guidr-header.png');
-    box-shadow: 0 4px 8px 0 @tree-green ;
+    position: relative;
+    text-align: center;
+    color: white;
+    
     h1 {
-        font-size: 4rem;
-        color: @white;
+        position: absolute;
+        top: 30%;
+        left: 10%;
+        font-size: 5rem;
+        color:@white;
         width: 331px;
         height: 100px;
     }
     button {
+       position: absolute;
+       top: 70%;
+       left: 18%;
+       width: 160px;
+       height: 40px;
+       background-color: @royal;
+       color: @white;
        
-       
+
+       &:hover {
+           cursor: pointer;
+           background-color: @tree-green;
+       }
     }
     
 }
 
+.background-divider {
+    width: auto;
+    height: 32px;
+    background-color: rgba(201, 255, 191, 0.5);
+}
+
+.middle-section {
+    width: auto;
+    height: 400px;
+    padding-bottom: 10px;
+    .text-section {
+        float: left;
+        width: 30%;
+        h3 {
+            padding: 10px;
+        }
+        .text-divider {
+            border-bottom: 1px solid;
+        }
+    }
+    .image-section {
+        float: right;
+        width: 70%;
+        height: auto;
+        background-color: white;
+
+    }
+}
+
+.middle-section-divider {
+    width: 904px;
+    height: 1px;
+    background-color: @tree-green; 
+}
+
+.bottom-section {
+    position: relative;
+    height: 200px;
+    width: auto;
+    align-items: center;
+    padding-bottom: 20px;
+    margin-bottom: 200px;
+    h2 {
+        text-align: center;
+    }
+    p {
+        text-align: center;
+        font-size: 2.3rem;
+        font-weight: bold;
+    } 
+    img {
+        display: block;
+        margin-left: auto;
+        margin-right: auto;
+        width: 50%;
+        padding-bottom: 10px;
+    }
+    button {
+        background-color: @royal;
+        color: @white;
+        font-size: 15px;
+        width: 160px;
+        height: 40px;
+        display: block;
+        margin-left: auto;
+        margin-right: auto;
+        
+        
+    }
+}
