@@ -1,0 +1,189 @@
+@font-face {
+  font-family: 'Roboto';
+  font-style: italic;
+  font-weight: 400;
+  src: local('Roboto Italic'), local('Roboto-Italic'), url(https://fonts.gstatic.com/s/roboto/v19/KFOkCnqEu92Fr1Mu51xIIzc.ttf) format('truetype');
+}
+@font-face {
+  font-family: 'Roboto';
+  font-style: normal;
+  font-weight: 400;
+  src: local('Roboto'), local('Roboto-Regular'), url(https://fonts.gstatic.com/s/roboto/v19/KFOmCnqEu92Fr1Mu4mxP.ttf) format('truetype');
+}
+@font-face {
+  font-family: 'Roboto';
+  font-style: normal;
+  font-weight: 700;
+  src: local('Roboto Bold'), local('Roboto-Bold'), url(https://fonts.gstatic.com/s/roboto/v19/KFOlCnqEu92Fr1MmWUlfBBc9.ttf) format('truetype');
+}
+header .Nav-Background {
+  height: 87px;
+  box-shadow: 0 4px 8px 0 rgba(38, 98, 27, 0.24);
+  background-color: #f8fdf7;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+header .Nav-Background .Logo {
+  width: 100px;
+  height: 47px;
+  object-fit: contain;
+  margin-left: 1.875rem;
+}
+header .Nav-Background .nav-btns {
+  display: flex;
+}
+header .Nav-Background .nav-btns .btn-light {
+  background-color: #c9ffbf;
+}
+header .Nav-Background .nav-btns .btn-light .btn-text {
+  color: #26621b;
+}
+header .Nav-Background .nav-btns .btn-dark {
+  background-color: #26621b;
+}
+header .Nav-Background .nav-btns .btn-dark .btn-text {
+  color: #ffffff;
+}
+.footer .Footer-Background {
+  height: 70px;
+  background-color: #26621b;
+  display: flex;
+  align-items: center;
+}
+.footer .Footer-Content {
+  width: 73px;
+  height: 14px;
+  font-family: Roboto;
+  font-size: 12px;
+  font-weight: 500;
+  font-style: normal;
+  font-stretch: normal;
+  line-height: normal;
+  letter-spacing: 0.1px;
+  color: #ffffff;
+  margin-left: 1.875rem;
+}
+.content {
+  background: url('../assets/background-image-mountain-toomas-tartes-1409263-un.png');
+  height: 48rem;
+  object-fit: contain;
+  background-repeat: no-repeat;
+  background-position-x: right;
+  background-size: 80rem;
+  display: flex;
+  align-items: center;
+}
+.content .content-box {
+  margin-top: 10rem;
+  margin-left: 40px;
+  color: white;
+  display: flex;
+  align-items: center;
+  flex-flow: column;
+}
+.content h1 {
+  font-family: Roboto;
+  font-size: 46px;
+  font-weight: bolder;
+  font-stretch: normal;
+  line-height: normal;
+  letter-spacing: 0.8px;
+  margin: 15px;
+  opacity: 1;
+  text-align: center;
+  color: #ffffff;
+}
+.content .UVP {
+  width: 350px;
+  font-family: Roboto;
+  font-size: 36px;
+  font-weight: bold;
+  font-stretch: normal;
+  line-height: normal;
+  letter-spacing: 0.75px;
+  margin: 15px;
+  opacity: 1;
+  text-align: center;
+  color: #ffffff;
+}
+.content .btn {
+  width: 160px;
+  height: 40px;
+  border-radius: 4px;
+  background-color: #0d1eb4;
+}
+.content .btn .btn-text {
+  color: #ffffff;
+}
+.content .content-text {
+  font-family: Roboto;
+  font-size: 24px;
+  font-weight: normal;
+  font-stretch: normal;
+  line-height: normal;
+  letter-spacing: 0.8px;
+  color: #ffffff;
+  margin: 15px;
+  opacity: 1;
+  text-align: center;
+}
+.content-features {
+  padding-top: 40px;
+  padding-bottom: 40px;
+  margin-left: auto;
+  margin-right: auto;
+  display: flex;
+  flex-wrap: nowrap;
+  justify-content: space-evenly;
+}
+.content-features .feature-node {
+  margin: 20px;
+}
+.content-features .feature-node svg {
+  height: 200px;
+  width: 200px;
+}
+.content-features .feature-node .feature-header {
+  height: 38px;
+  font-family: Roboto;
+  font-size: 32px;
+  font-weight: bold;
+  font-style: normal;
+  font-stretch: normal;
+  line-height: normal;
+  letter-spacing: 0.8px;
+  color: #26621b;
+  text-align: center;
+}
+html,
+body {
+  margin: 0;
+  padding: 0;
+  font-family: 'Roboto';
+  background-color: #fffef7;
+}
+.bg-divider {
+  height: 32px;
+  background-color: rgba(201, 255, 191, 0.5);
+}
+.btn {
+  width: 120px;
+  height: 40px;
+  border-radius: 4px;
+  box-shadow: 0 4px 8px 0 rgba(38, 98, 27, 0.24);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-right: 20px;
+  text-decoration: none;
+}
+.btn .btn-text {
+  font-family: Roboto;
+  font-size: 14px;
+  font-weight: bold;
+  font-style: normal;
+  font-stretch: normal;
+  line-height: normal;
+  letter-spacing: 0.8px;
+}
