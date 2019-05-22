@@ -139,11 +139,15 @@ header {
         width: 30%;
         h3 {
             padding: 10px;
-            font-size: 1.8rem;
+            @media @mobile{
+                font-size: 1.8rem;
+            }
         }
         .text-divider {
-            margin-top: 25rem;
             border-bottom: 1px solid;
+            @media @mobile {
+                margin-top: 25rem;
+            }
         }
     }
     .image-section {

@@ -169,11 +169,19 @@ header button:hover {
 }
 .middle-section .text-section h3 {
   padding: 10px;
-  font-size: 1.8rem;
+}
+@media (max-width: 500px) {
+  .middle-section .text-section h3 {
+    font-size: 1.8rem;
+  }
 }
 .middle-section .text-section .text-divider {
-  margin-top: 25rem;
   border-bottom: 1px solid;
+}
+@media (max-width: 500px) {
+  .middle-section .text-section .text-divider {
+    margin-top: 25rem;
+  }
 }
 .middle-section .image-section {
   float: right;
