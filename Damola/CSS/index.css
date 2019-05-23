@@ -278,7 +278,7 @@ h2 {
   flex-wrap: wrap;
   align-items: flex-end;
   justify-content: space-between;
-  background-color: #ffffff;
+  background-color: lightgray;
 }
 .team .team-member {
   width: 30%;
@@ -312,10 +312,11 @@ footer {
   }
 }
 footer p {
-  width: 100px;
+  width: 150px;
   height: 20px;
   font-family: Roboto;
-  font-size: 0.1rem;
+  font-size: 2rem;
+  margin: 10px 0 0 10px;
   font-style: normal;
   font-stretch: normal;
   line-height: normal;
