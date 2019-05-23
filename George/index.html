@@ -3,7 +3,8 @@
 <head>
     <title>Guidr</title>
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <link href="css/marketing.css" rel="stylesheet">
+    <link href="css/index.css" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
     <script src='https://cdnjs.cloudflare.com/ajax/libs/gsap/2.0.2/TweenMax.min.js'></script>
     <script src="js/content.js"></script>
 </head>
@@ -11,19 +12,45 @@
 
     <header>
         <nav class='nav-bar'>
-            <img src="assets/Logo.svg" class="logo">
+            <img src="assets/Logo.svg" id='logo' class="logo">
             <div class='nav-btns'>
                 <a class='btn btn-light' href='#'>REGISTER</a>
                 <a class='btn btn-dark' href='#'>SIGN IN</a>
                 <a class='btn btn-light' href='about.html'>ABOUT</a>
             </div>
+            <div id="mobile-nav">
+                <div id="close">
+                    <div class="bar"></div>
+                    <div class="bar"></div>
+                </div>
+                <div id="mobile-nav-items">
+                    <ul>
+                        <li>Nav item</li>
+                        <li>Nav item</li>
+                        <li>Nav item</li>
+                        <li>Nav item</li>
+                        <li>Nav item</li>
+                    </ul>
+                </div>
+                </div>
+            
         </nav>       
     </header>
 
     <section class='content'>
+            <picture class="content-bg-img">
+                    <source media="(min-width: 1000px)" srcset="assets/background-image-mountain-toomas-tartes-1409263-un@3x.png">
+                    <source media="(min-width: 800)" ssrcset="assets/background-image-kayak-gigi-1519461-unsplash@2x.png">
+                    <source media="(min-width: 500px)" srcset="assets/background-image-kayak-gigi-1519461-unsplash.png">
+                    <img src="assets/background-image-kayak-gigi-1519461-unsplash.png" class="content-bg-img">
+            </picture>
         <div class='content-container landing'>
+            <div class='phone-card-bg'>
+
+            </div>
             <div class='content-box landing'>
-                <h1 id='content-box-header'>Track the Places You Love to Hike</h1>
+                <!-- <h1 id='content-box-header'>Track the Places You Love to Hike</h1> -->
+                <h1 id='content-box-header'>Features For Hikers,<br> Made By Hikers.</h1>
                 <div class='UVP' id='UVP'>Create Your Guide Portfolio With Guidr</div>
                 <a class='btn' href='#'><span class='btn-text'>TRY NOW</span></a>
             </div>
@@ -36,7 +63,7 @@
                         <a class='btn btn-dark' href='#'><span class='btn-text'>SIGN IN</span></a>
                     </div>
                 </div>
-                <div>
+                <div class="landing-animation-1-inner text-box">
                     <p id='tst-h1'>Big Rocky Mountain</p>
                     <p id='tst-h2'>A 3 Day Trek Through The Rockies</p>
                     <p id='tst-text'>
@@ -47,27 +74,30 @@
             </div>
         </div>  
     </section>
-
     <div class='bg-divider'></div>
-
     <section class='content-features'>
-        <div class='feature-node'>
+        <div class='feature-node landing' style='order: 3;'>
             <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">       
                 <image xlink:href="assets/map-10.svg" height="200" width="200"/>
             </svg>
             <h2 class='feature-header'>Explore</h2>
+            <p class='feature-copy'>Find support, motivation, and new trails from other hikers.</p>
         </div>
-        <div class='feature-node'>
+        <div class='feature-node landing' style='order: 2;'>
                 <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">       
                     <image xlink:href="assets/resume.svg" height="200" width="200"/>
                 </svg>
                 <h2 class='feature-header'>Build</h2>
+                <p class='feature-copy'>Find support and motivation from other runners, plus create challenges for you and your friends.</p>
+
         </div>
-        <div class='feature-node'>
+        <div class='feature-node landing' style='order: 1;'>
                 <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">       
                     <image xlink:href="assets/book.svg" width="200" height="200"/>
                 </svg>
-                <h2 class='feature-header'>Log</h2>
+                <h2 class='feature-header'>Track Hikes</h2>
+                <p class='feature-copy'>Keep a list of the trails you want to explore, or the ones that inspire you to get outside. Never lose track of your next adventure.</p>
+
         </div>
     </section>
     

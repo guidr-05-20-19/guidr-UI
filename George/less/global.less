@@ -1,9 +1,11 @@
 
 html, body {
-    margin: 0;
+    margin: 0 auto;
     padding: 0;
     font-family: 'Roboto';
-    background-color: #fffef7;
+    max-width: 1600px;
+    // height: 1808px;
+    background-color: #fbfefb;
   }
   
   .bg-divider {
@@ -15,4 +17,8 @@ html, body {
   nav, .content{
     width: 100%;
     margin: 0 auto;
+  }
+
+  .content.active, .bg-divider.active, .content-features.active, footer.active{
+    display: none;
   }

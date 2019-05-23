@@ -1,13 +1,17 @@
 .content {
-    background: url('../assets/background-image-mountain-toomas-tartes-1409263-un.png');
-    height: 48rem;
+    // background: url('../assets/background-image-mountain-toomas-tartes-1409263-un.png');
+    // height: 48rem;
     object-fit: contain;
-    background-repeat: no-repeat;
-    background-position-x: right;
-    background-size: 80rem;
     display: flex;
     align-items: center;
-    
+  //   @media @phone {
+  //   flex-direction: column;
+  // }
+
+
+    .content-bg-img{
+      width: 100%;
+    }
 
   .content-container{
     z-index: 4;
@@ -16,8 +20,13 @@
   }
 
   .content-container.landing {
-      width:  auto;
+      // width:  80%;
       height: auto;
+      position: absolute;
+      // top: 62%;
+      margin-top: 5%;
+      display: flex;
+      justify-content: center;
     }
 
     .content-box.about {
@@ -27,33 +36,45 @@
 
     .content-box {
       margin-top: 10rem;
-      margin-left: 40px;
+      // margin-left: 40px;
       color:  white;
       display: flex;
       align-items: center;
       flex-flow: column;
     }
-    .content-box-2 {
-      top:15rem;
-      left: 10rem;
-      position: absolute;
+
+    .content-box.landing {
+      // width: 80%;
+      // margin-top: 0rem;
+      margin-left: 0rem;
+      @media @phone {
+        // width: 80%;
+    }
     }
 
   // Animation Styling
 
+    .content-box-2 {
+      width: 49%;
+      top:15rem;
+      left: 10rem;
+      // position: absolute;
+    }
+
     .landing-animation-1 {
       visibility:hidden;
       color:  white;
-      font-size: 26px;
-      position: absolute;
-      top: 300px;
-      right: 125px;
-      font-size: 46px;
+      // font-size: 26px;
+      // position: absolute;
+      // top: 300px;
+      // right: 125px;
+      // font-size: 46px;
       width: 350px;
       height: 500px;
       border: solid 18px;
       display: flex;
       flex-direction: column;
+      justify-content: space-between;
       background: linear-gradient(transparent 58%, #c9ffbf 52%, #c9ffbf 73%, white 70%) no-repeat
     } 
 
@@ -92,31 +113,37 @@
           }
         }
     }
+    .landing-animation-1-inner.text-box {
+      height: 10rem;
+      #tst-h1 {
+        font-size: 15px;
+        color: black;
+        top: 18.5rem;
+        right: 16rem;
+        position: absolute;
+        font-weight: bold;
+      }
+      #tst-h2 {
+        font-size: 13px;
+        color: black;
+        width: 22.5rem;
+        top: 20rem;
+        position: absolute;
+        text-align: center;
+      }
+      #tst-text{
+        color: black;
+        font-size: 10px;
+        // position: absolute;
+        // top: 23rem;
+        text-align: justify;
+        width: 90%;
+        padding: 15px;
+        margin-bottom: auto;
+      }
+    }
 
-    #tst-h1 {
-      font-size: 15px;
-      color: black;
-      top: 18rem;
-      left: 7rem;
-      position: absolute;
-      font-weight: bold;
-    }
-    #tst-h2 {
-      font-size: 13px;
-      color: black;
-      width: 22.5rem;
-      top: 20rem;
-      position: absolute;
-      text-align: center;
-    }
-    #tst-text{
-      color: black;
-      font-size: 10px;
-      position: absolute;
-      top: 23rem;
-      text-align: justify;
-      width: 21.5rem;
-    }
+    
   // End Animation Styling
   
     h1 {
@@ -141,7 +168,7 @@
     .UVP{
       width: 350px;
       font-family: Roboto;
-      font-size: 36px;
+      font-size: 2.25rem;
       font-weight: bold;
       font-stretch: normal;
       line-height: normal;
@@ -173,12 +200,40 @@
     }
   }
 
+  //Device Elements Styling
+
+    .phone-card-bg {
+      width: 344px;
+      height: 277px;
+      border-radius: 5px;
+      box-shadow: 0 4px 8px 0 rgba(8, 35, 48, 0.24);
+      background-color: @tree-green;
+      display: none;
+      @media @phone {
+        display: block;
+      }
+  
+
+    }
+    .phone-bg-img {
+      width: 375px;
+      height: 750px;
+      object-fit: contain;
+    }
+
+  //End Device Elements Styling
+
+     
   // About Page Styling
 
   .content-features.about {
     flex-wrap: wrap;
     padding-top: 0px;
     max-width: 70rem;
+    @media @phone {
+      flex-direction: column;
+    }
+
 
     .feature-node.about {
       width: 175px;
@@ -205,22 +260,31 @@
   }
   // End About Page Styling
 
+  // Content Features
+
   .content-features {
     padding-top: 40px;
     padding-bottom: 40px;
-    // max-width: 1100px;
     margin-left: auto;
     margin-right: auto;
     display: flex;
     flex-wrap: nowrap;
     justify-content: space-evenly;
 
+    @media @tablet {
+      flex-flow: column;
+      align-items: center;
+      width: 97%;
+      padding: 0px 0px;
+      height: 100%;
+      margin-bottom: 10px;
+     }
+
     @media @phone {
       flex-flow: column;
       align-items: center;
       width: 97%;
       padding: 0px 0px;
-      // margin: 20px 2.5%;
       height: 100%;
       margin-bottom: 10px;
     }
@@ -245,8 +309,18 @@
         text-align: center;
         }
       }
-}
 
+      .feature-node.landing{
+        display: flex;
+        flex-direction: column;
+        width: 16%;
+
+        .feature-copy{
+          text-align: center;
+          color: @tree-green
+        }
+      }
+}
 #overlay-box {
   background: @very-light-green;
   height: 48.8rem;
