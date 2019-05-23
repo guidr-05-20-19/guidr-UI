@@ -39,7 +39,7 @@ h4 {
   width: 100%;
   height: 87px;
   background-color: #ffffff;
-  margin-bottom: 1rem;
+  margin-bottom: 2rem;
 }
 @media (max-width: 550px) {
   .main-navigation {
@@ -54,37 +54,33 @@ h4 {
     height: 40px;
   }
 }
-.main-navigation nav button {
+.main-navigation nav a {
+  cursor: pointer;
   background-color: #26631b;
   width: 97.5px;
   height: 40px;
   font-family: Roboto;
   font-size: 2rem;
   font-weight: bold;
-  font-style: normal;
-  font-stretch: normal;
-  line-height: normal;
+  text-decoration: none;
   letter-spacing: 0.8px;
   color: #ffffff;
-  margin-left: 20px;
-  padding: 4px 10px 2px 10px;
+  margin: 0 0 20px 20px;
+  padding: 10px 20px 10px 20px;
 }
 @media (max-width: 550px) {
-  .main-navigation nav button {
+  .main-navigation nav a {
     font-size: 12px;
     width: 70px;
     height: 30px;
   }
 }
-.main-navigation nav button:hover {
+.main-navigation nav a:hover {
   background-color: #0d1eb4;
-}
-.main-navigation nav button:visited {
-  background-color: #99774e;
 }
 header {
   width: auto;
-  height: 620px;
+  height: 600px;
   position: relative;
   text-align: center;
   color: white;
@@ -115,17 +111,22 @@ header h1 {
     left: 5%;
   }
 }
-header button {
+header a {
+  cursor: pointer;
   position: absolute;
+  font-size: 2rem;
   top: 70%;
   left: 18%;
-  width: 160px;
-  height: 40px;
+  width: 100px;
+  height: 30px;
+  padding: 10px;
+  border-radius: 10px;
+  text-decoration: none;
   background-color: #0d1eb4;
   color: #ffffff;
 }
 @media (max-width: 550px) {
-  header button {
+  header a {
     position: absolute;
     top: 60%;
     left: 16%;
@@ -134,7 +135,7 @@ header button {
     height: 25px;
   }
 }
-header button:hover {
+header a:hover {
   cursor: pointer;
   background-color: #26631b;
 }
@@ -242,6 +243,75 @@ header button:hover {
   margin-left: auto;
   margin-right: auto;
 }
+.flexbox-row {
+  display: flex;
+  flex-direction: row;
+}
+.flexbox-column {
+  display: flex;
+  flex-direction: column;
+}
+.about-us {
+  width: 100%;
+  height: 350px;
+  background-color: #c9ffbf;
+}
+@media (max-width: 550px) {
+  .about-us {
+    height: 500px;
+  }
+}
+.about-us h3,
+.about-us h4 {
+  text-align: center;
+}
+.about-us h4 {
+  font-size: 2rem;
+}
+.about-us li {
+  font-size: 1.7rem;
+}
+.about-us p {
+  font-size: 2rem;
+  margin: 0 25px 0 25px;
+}
+h2 {
+  text-align: center;
+}
+.team {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  align-items: flex-end;
+  justify-content: space-between;
+  background-color: lightgray;
+}
+.team .team-member {
+  width: 30%;
+  height: 400px;
+  margin: 10px 30px 60px 30px;
+}
+.team .team-member .text-content .img-round {
+  border-radius: 100%;
+}
+.team .team-member .text-content a {
+  text-align: center;
+  background-color: #99774e;
+  font-size: 2rem;
+  text-decoration: none;
+  border-radius: 10px;
+  border: 1px solid;
+  color: black;
+  padding: 10px;
+}
+@media (max-width: 550px) {
+  .team .team-member .text-content a {
+    font-size: 1.4rem;
+  }
+}
+.team .team-member .text-content a:hover {
+  color: #ffffff;
+}
 footer {
   height: 7rem;
   width: auto;
@@ -253,17 +323,34 @@ footer {
   }
 }
 footer p {
-  width: 100px;
+  width: 150px;
   height: 20px;
   font-family: Roboto;
-  font-size: 0.1rem;
+  font-size: 2rem;
+  margin: 10px 0 0 10px;
   font-style: normal;
   font-stretch: normal;
   line-height: normal;
   letter-spacing: 0.1px;
   color: #ffffff;
 }
-.flexbox-row {
+.blog-section {
+  width: 100%;
+  height: 500px;
+  background-color: #c9ffbf;
   display: flex;
   flex-direction: row;
+}
+@media (max-width: 550px) {
+  .blog-section {
+    height: 920px;
+  }
+}
+.blog {
+  width: 30%;
+  height: auto;
+  margin-left: 2.5rem;
+}
+.blog p {
+  font-size: 1.5rem;
 }

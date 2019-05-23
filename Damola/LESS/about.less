@@ -1,0 +1,74 @@
+
+
+.about-us {
+    width: 100%;
+    height: 350px;
+    background-color: @very-light-green;
+    @media @mobile {
+        height: 500px;
+    }
+    h3 , h4 {
+        text-align: center;
+    }
+    h4 {
+        font-size: @medium;
+    }
+    li {
+        font-size: 1.7rem;
+    }
+    p {
+        font-size: @medium;
+        margin: 0 25px 0 25px;
+    }
+}
+
+h2 {
+    text-align: center;
+}
+.team {
+    .flexbox-row;
+    flex-wrap: wrap;
+    align-items: flex-end;
+    justify-content: space-between;
+    background-color: lightgray;
+    
+    
+   
+    .team-member {
+        width: 30%;
+        height: 400px;
+        margin: 10px 30px 60px 30px;
+        
+        
+        .text-content {
+            .img-round {
+                border-radius: 100%;
+            }
+
+           
+            a {
+                text-align: center;
+                background-color: @mocha;
+                font-size: 2rem;
+                text-decoration: none;
+                border-radius: 10px;
+                border: 1px solid;
+                color: black;
+                padding: 10px;
+
+                @media @mobile {
+                    font-size: 1.4rem;
+                }
+                &:hover {
+                    color: @white;
+                }
+            }
+            
+           
+            
+        }
+        
+        
+    }
+}
+
