@@ -1,17 +1,11 @@
 .content {
-    // background: url('../assets/background-image-mountain-toomas-tartes-1409263-un.png');
-    // height: 48rem;
-    object-fit: contain;
     display: flex;
     align-items: center;
-  //   @media @phone {
-  //   flex-direction: column;
-  // }
 
-
-    .content-bg-img{
-      width: 100%;
-    }
+  .content-bg-img{
+    width: 100%;
+    display: none;
+  }
 
   .content-container{
     z-index: 4;
@@ -20,11 +14,26 @@
   }
 
   .content-container.landing {
-      // width:  80%;
       height: auto;
-      position: absolute;
-      // top: 62%;
-      margin-top: 5%;
+      background: url("../assets/background-image-mountain-toomas-tartes-1409263-un@3x.png");
+      background-size: cover;
+      display: flex;
+      justify-content: center;
+      @media @tablet {
+        background: url("../assets/background-image-mountain-toomas-tartes-1409263-un.png");
+        background-size: cover;
+        height: 60vh;
+      }
+      @media @phone {
+          background: url("../assets/background-image-kayak-gigi-1519461-unsplash.png");
+          height: 111vh;
+        }
+    }
+    
+    .content-container.landing.dark{
+      height: auto;
+      background: url("../assets/milky-way.jpg");
+      background-size: cover;
       display: flex;
       justify-content: center;
     }
@@ -36,20 +45,55 @@
 
     .content-box {
       margin-top: 10rem;
-      // margin-left: 40px;
       color:  white;
       display: flex;
       align-items: center;
       flex-flow: column;
+      @media @tablet {
+        width: auto;
+      }
+      @media @phone {
+        width: auto;
+        position: absolute;
+        top: 9rem;
+        left: 1rem;
+        right: 1rem;
+      }
+
+      #content-box-header {
+
+        @media @tablet {
+          font-size: 3.5rem;
+        }
+        @media @phone {
+          font-size: 3.5rem;
+          margin: 0 auto;
+          margin-top: 20vh;
+        }
+      } 
     }
 
     .content-box.landing {
-      // width: 80%;
-      // margin-top: 0rem;
+      margin-top: 0rem;
       margin-left: 0rem;
-      @media @phone {
-        // width: 80%;
+      opacity: 0;
+      visibility: hidden;
+      @media @tablet {
+        visibility: visible;
     }
+      #content-box-header {
+        text-shadow: 2px 2px 2px rgb(18, 53, 11);
+        -webkit-text-stroke: 2px rgb(18, 53, 11);
+        font-size: 5rem;
+        @media @tablet {
+          font-size: 3.5rem;
+        }
+        @media @phone {
+          font-size: 3.5rem;
+          margin: 0 auto;
+          margin-top: 20vh;
+        }
+      }
     }
 
   // Animation Styling
@@ -59,23 +103,33 @@
       top:15rem;
       left: 10rem;
       // position: absolute;
+      @media @tablet {
+        width: auto;
+      }
+      @media @phone {
+        width: auto;
+        position: absolute;
+        top: 9rem;
+        left: 1rem;
+        right: 1rem;
+      }
     }
 
     .landing-animation-1 {
       visibility:hidden;
       color:  white;
-      // font-size: 26px;
-      // position: absolute;
-      // top: 300px;
-      // right: 125px;
-      // font-size: 46px;
+      margin-top: 9rem;
       width: 350px;
       height: 500px;
       border: solid 18px;
       display: flex;
       flex-direction: column;
       justify-content: space-between;
-      background: linear-gradient(transparent 58%, #c9ffbf 52%, #c9ffbf 73%, white 70%) no-repeat
+      background: linear-gradient(transparent 58%, #c9ffbf 52%, #c9ffbf 73%, white 70%) no-repeat;
+
+      @media @tablet {
+        display: none;
+      }
     } 
 
     .landing-animation-1-inner{
@@ -114,32 +168,40 @@
         }
     }
     .landing-animation-1-inner.text-box {
-      height: 10rem;
+      height: 13rem;
+      display: flex;
+      flex-direction: column;
+      justify-content: start;
+
       #tst-h1 {
         font-size: 15px;
         color: black;
-        top: 18.5rem;
-        right: 16rem;
-        position: absolute;
+        background-color: #c9ffbf;
+        width: 100%;
+        text-align: center;
+        margin-top: 0px;
         font-weight: bold;
+        height: 12%;
+        margin: 0px;
       }
+
       #tst-h2 {
         font-size: 13px;
         color: black;
-        width: 22.5rem;
-        top: 20rem;
-        position: absolute;
+        background-color: #c9ffbf;
+        width: 100%;
         text-align: center;
+        margin-top: 0px;
+        margin-bottom: 0px;
       }
+
       #tst-text{
         color: black;
         font-size: 10px;
-        // position: absolute;
-        // top: 23rem;
         text-align: justify;
-        width: 90%;
+        background-color: #f8fdf7;
+        width: 88%;
         padding: 15px;
-        margin-bottom: auto;
       }
     }
 
@@ -154,16 +216,11 @@
       line-height: normal;
       letter-spacing: 0.8px;
       margin: 15px;
-      opacity: 1;
+      // opacity: 1;
       text-align: center;
       color: #ffffff;
     }
 
-    .about-header{
-      color: white;
-      background-color: @tree-green;
-      width: 100%;
-    }
 
     .UVP{
       width: 350px;
@@ -177,6 +234,10 @@
       opacity: 1;
       text-align: center;
       color: #ffffff;
+      text-shadow: 2px 2px 2px rgb(18, 53, 11);
+      @media @phone {
+        width: auto;
+      }
     }
 
     .btn {
@@ -210,7 +271,7 @@
       background-color: @tree-green;
       display: none;
       @media @phone {
-        display: block;
+        // display: block;
       }
   
 
@@ -226,6 +287,14 @@
      
   // About Page Styling
 
+    .about-header{
+      color: white;
+      background-color: @tree-green;
+      width: 100%;
+    }
+    .content-container.about {
+      background-color: @very-light-green;
+    }
   .content-features.about {
     flex-wrap: wrap;
     padding-top: 0px;
@@ -314,6 +383,10 @@
         display: flex;
         flex-direction: column;
         width: 16%;
+        @media @tablet {
+          width: auto;
+          align-items: center;
+        }
 
         .feature-copy{
           text-align: center;
