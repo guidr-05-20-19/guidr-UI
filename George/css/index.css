@@ -528,6 +528,12 @@ header #mobile-nav.active #mobile-nav-items ul li {
   margin-bottom: 25px;
   flex: 0 1 18%;
 }
+.content-features.about .feature-node.about .git-logo {
+  width: 1.8rem;
+  height: 2.2rem;
+  flex: -1 1 32%;
+  margin-left: 2px;
+}
 .content-features.about .feature-node.about img {
   width: 100%;
   height: auto;
@@ -537,9 +543,12 @@ header #mobile-nav.active #mobile-nav-items ul li {
   padding: 10px 20px;
   background-color: #26621b;
   color: white;
-  height: '';
-  font-size: '';
   padding: 0px 0px;
+  display: flex;
+  flex-flow: row;
+  justify-content: center;
+  align-items: center;
+  padding-left: 2%;
 }
 .content-features {
   padding-top: 40px;
@@ -641,6 +650,7 @@ footer.active {
   display: none;
 }
 .spotlight.dark {
+  display: block;
   position: absolute;
   height: 100%;
   width: 100%;
@@ -649,4 +659,68 @@ footer.active {
   left: 0;
   position: fixed;
   background-image: radial-gradient(circle, transparent 160px, rgba(0, 0, 0, 0.85) 200px);
+}
+/* -------------------------------- 
+Title: Switch
+Descr: Custom ON/OFF checkbox toggle
+-------------------------------- */
+/* style */
+/* animation */
+.switch {
+  display: flex;
+  flex-shrink: 0;
+  align-items: center;
+  position: relative;
+  width: 64px;
+  height: 32px;
+  border-radius: 50em;
+  padding: 3px 0;
+}
+.switch__input,
+.switch__label {
+  position: absolute;
+  left: 0;
+  top: 0;
+}
+.switch__input {
+  margin: 0;
+  padding: 0;
+  opacity: 0;
+  height: 0;
+  width: 0;
+  pointer-events: none;
+}
+.switch__input:checked + .switch__label {
+  background-color: var(--color-primary);
+}
+.switch__input:checked + .switch__label + .switch__marker {
+  left: calc(100% - 32px + 3px);
+}
+.switch__input:focus + .switch__label,
+.switch__input:active + .switch__label {
+  --color-shadow: hsla(228, 74%, 61%, 0.2);
+  box-shadow: 0 0 0 3px hsla(228, 74%, 61%, 0.2);
+}
+.switch__label {
+  width: 100%;
+  height: 100%;
+  color: transparent;
+  user-select: none;
+  background-color: hsl(252, 4%, 25%);
+  border-radius: inherit;
+  z-index: 1;
+  transition: background 0.2s;
+}
+.switch__marker {
+  position: relative;
+  background-color: var(--color-white);
+  width: calc(32px - 3px * 2);
+  height: calc(32px - 3px * 2);
+  border-radius: 50%;
+  z-index: 2;
+  pointer-events: none;
+  box-shadow: 0 1px 1px hsla(0, 0%, 0%, 0.25);
+  left: 3px;
+  transition: left 0.2s;
+  will-change: left;
 }
