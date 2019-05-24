@@ -5,10 +5,15 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link href="css/index.css" rel="stylesheet">
     <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <link href='https://cdnjs.cloudflare.com/ajax/libs/jqueryui/1.12.1/jquery-ui.min.css' rel='stylesheet'>
+    <script src='https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js'></script>
+    <script src='https://cdnjs.cloudflare.com/ajax/libs/jqueryui/1.12.1/jquery-ui.min.js'></script>       
     <script src='https://cdnjs.cloudflare.com/ajax/libs/gsap/2.0.2/TweenMax.min.js'></script>
     <script src="js/content.js"></script>
 </head>
 <body>
+    <div class="spotlight"></div>
+    
 
     <header>
         <nav class='nav-bar'>
@@ -17,7 +22,9 @@
                 <a class='btn btn-light' href='#'>REGISTER</a>
                 <a class='btn btn-dark' href='#'>SIGN IN</a>
                 <a class='btn btn-light' href='about.html'>ABOUT</a>
+                <a class='btn btn-light' id='btn-dark' href='#'>DARK MODE</a>
             </div>
+            <script  src="js/dark_mode.js"></script>
             <div id="mobile-nav">
                 <div id="close">
                     <div class="bar"></div>
@@ -25,11 +32,9 @@
                 </div>
                 <div id="mobile-nav-items">
                     <ul>
-                        <li>Nav item</li>
-                        <li>Nav item</li>
-                        <li>Nav item</li>
-                        <li>Nav item</li>
-                        <li>Nav item</li>
+                        <li><a href='#'>REGISTER</a></li>
+                        <li><a href='#'>SIGN IN</a></li>
+                        <li><a href='about.html'>ABOUT</a></li>
                     </ul>
                 </div>
                 </div>
@@ -38,15 +43,8 @@
     </header>
 
     <section class='content'>
-            <picture class="content-bg-img">
-                    <source media="(min-width: 1000px)" srcset="assets/background-image-mountain-toomas-tartes-1409263-un@3x.png">
-                    <source media="(min-width: 800)" ssrcset="assets/background-image-kayak-gigi-1519461-unsplash@2x.png">
-                    <source media="(min-width: 500px)" srcset="assets/background-image-kayak-gigi-1519461-unsplash.png">
-                    <img src="assets/background-image-kayak-gigi-1519461-unsplash.png" class="content-bg-img">
-            </picture>
         <div class='content-container landing'>
             <div class='phone-card-bg'>
-
             </div>
             <div class='content-box landing'>
                 <!-- <h1 id='content-box-header'>Track the Places You Love to Hike</h1> -->
@@ -74,6 +72,7 @@
             </div>
         </div>  
     </section>
+
     <div class='bg-divider'></div>
     <section class='content-features'>
         <div class='feature-node landing' style='order: 3;'>
@@ -106,5 +105,9 @@
             <div class='Footer-Content'>© 2019 Guidr</div>
         </div>
     </footer>
+
+
+
 </body>
+
 </html>
