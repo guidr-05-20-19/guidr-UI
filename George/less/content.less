@@ -304,13 +304,20 @@
     }
 
 
+
+
     .feature-node.about {
       width: 175px;
       background-color: white;
       box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
       margin-bottom: 25px;
       flex: 0 1 18%;
-
+      .git-logo {
+        width: 1.8rem;
+        height: 2.2rem;
+        flex: -1 1 32%;
+        margin-left: 2px;
+        }
       img {
         width: 100%;
         height: auto;
@@ -322,9 +329,12 @@
       padding: 10px 20px;
       background-color: @tree-green;
       color:  white;
-      height: '';
-      font-size: '';
       padding: 0px 0px;
+      display: flex;
+      flex-flow: row;
+      justify-content: center;
+      align-items: center;
+      padding-left: 2%;
     }
   }
   // End About Page Styling

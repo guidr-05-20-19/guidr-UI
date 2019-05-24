@@ -3,11 +3,12 @@ class darkMode {
     constructor(btn){
         // Assign this.cardElement to the cardElement DOM reference
         this.btn = btn;
-        console.log(this)
+        // console.log(this)
         this.spotlight = document.querySelector('.spotlight');
-        console.log(this.spotlight)
-        let spotlightSize = 'transparent 160px, rgba(0, 0, 0, 0.85) 200px)';
+        // console.log(this.spotlight)
         this.btn.addEventListener('click', this.onOff);
+       
+
     }
     onOff = () => {
 
@@ -20,15 +21,17 @@ class darkMode {
 
     }
     switchOn = () => {
+        console.log(this.spotlight)
        let s = document.querySelector('.spotlight');
         document.querySelector('.spotlight').classList.toggle('dark');
         document.querySelector('.content-container.landing').classList.toggle('dark');
-        window.addEventListener('mousemove', e => updateSpotlight(e));
-
+        let spotlightSize = 'transparent 160px, rgba(0, 0, 0, 0.85) 200px)';
+        window.addEventListener('mousemove', e => this.updateSpotlight(e, spotlightSize));
+        
         window.addEventListener('mousedown', e => {
 
             let spotlightSize = 'transparent 130px, rgba(0, 0, 0, 0.95) 150px)';
-            updateSpotlight(e);
+            this.updateSpotlight(e, spotlightSize);
 
         });
 
@@ -36,22 +39,24 @@ class darkMode {
 
             let spotlightSize = 'transparent 160px, rgba(0, 0, 0, 0.85) 200px)';
 
-            updateSpotlight(e);
+            this.updateSpotlight(e, spotlightSize);
 
         });
-
-        function updateSpotlight(e) {
-            let s = document.querySelector('.spotlight');
-           s.style.backgroundImage = `radial-gradient(circle at ${e.pageX / window.innerWidth * 100}% ${e.pageY / document.body.scrollHeight * 100}%, ${spotlightSize}`;
-        };
+           // function updateSpotlight(e, spotlightSize) {
+        //    let s = document.querySelector('.spotlight');
+        //    s.style.backgroundImage = `radial-gradient(circle at ${e.pageX / window.innerWidth * 100}% ${e.pageY / document.body.scrollHeight * 100}%, ${spotlightSize}`;
+        // };
         
     }
+    updateSpotlight = (e, spotlightSize) => {
+        let s = document.querySelector('.spotlight');
+        s.style.backgroundImage = `radial-gradient(circle at ${e.pageX / window.innerWidth * 100}% ${e.pageY / document.body.scrollHeight * 100}%, ${spotlightSize}`;
+    } 
 
   }
-  let d = document.querySelector('#btn-dark');
-  console.log(d)
+  let d = document.querySelector('#btn-night');
   new darkMode(d);
-  
+
 
 
 
